@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Chart</title>
+	<script src="chart.js"></script>
+</head>
+
+<body>
+	<div>
+		<canvas id="myChart"></canvas>
+	</div>
+	<script>
+		const SUPPLY = 2n ** 64n - 1n;
+		const EMISSION_SPEED_FACTOR = 19n;
+		const TAIL_EMISSION_PER_MINUTE = 0.5;
+		const PRECISION = 100;
+		const NR_BLOCKS = 2700000 / PRECISION;
+
+		const minutesPerDay = 60 * 24
+		const tail = BigInt(TAIL_EMISSION_PER_MINUTE*100) * 10n**10n;
+		function maxBigInts(a, b) {
+			return a > b ? a : b
+		}
+
+		let blockRewards = []
+		let labels = []
+		let supply = [];
+		let inflation = [];
+
+		let alreadyMined = 0n;
+
+		for (var i = 0; i < NR_BLOCKS; i++) {
+			const m = maxBigInts((SUPPLY - alreadyMined) / (2n ** EMISSION_SPEED_FACTOR), tail) * BigInt(PRECISION)
+			alreadyMined += m;
+			if (i % (minutesPerDay * 365 / 8 / PRECISION) === 0) {
+				const lbl = (Math.round(i / minutesPerDay * PRECISION)/365)
+				if (lbl % 1 === 0) {
+						labels.push(lbl+" y")
+				} else {
+					labels.push(" ")
+				}
+				blockRewards.push(parseInt(m) / 10 ** 12)
+				inflation.push(
+					parseInt(m) / parseFloat(alreadyMined/10n**12n) * minutesPerDay * 365 / 10**10
+				)
+				supply.push(Math.round(parseInt(alreadyMined / 100n) / 10 ** 10))
+			} else {
+				console.log(i % (minutesPerDay * 365 / 8 / PRECISION))
+			}
+		}
+
+		const data = {
+			labels: labels,
+			datasets: [{
+				label: "Reward per minute",
+				backgroundColor: 'rgb(255, 99, 132)',
+				borderColor: 'rgb(255, 99, 132)',
+				data: blockRewards,
+				yAxisID: 'y',
+			},
+			{
+				label: "Supply",
+				backgroundColor: "#66ee66",
+				borderColor: "#66ee66",
+				data: supply,
+				yAxisID: 'y1',
+			}, /*{
+				label: "Inflation %",
+				backgroundColor: "#6666ee",
+				borderColor: "#6666ee",
+				data: inflation,
+
+				yAxisID: "y2",
+			}*/]
+		};
+
+		const config = {
+			type: 'line',
+			data: data,
+			options: {
+				elements: {
+					point: {
+						radius: 0,
+						hoverRadius: 3
+					},
+				},
+				interaction: {
+					mode: "index",
+					intersect: false
+				},
+				tension: 0.5,
+				scales: {
+					y: {
+						type: 'linear',
+						display: false,
+						position: 'left',
+						min: 0
+					},
+					y1: {
+						type: 'linear',
+						display: false,
+						position: 'right',
+
+						// grid line settings
+						grid: {
+							drawOnChartArea: false, // only want the grid lines for one axis to show up
+						},
+					},
+					y2: {
+						type: 'linear',
+						display: false,
+						min: 0,
+						max: 50
+					}
+				}
+			}
+		}
+			const myChart = new Chart(
+				document.getElementById('myChart'),
+				config
+			);
+	</script>
+</body>

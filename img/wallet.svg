@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+ width="50"
+ height="50"
+ viewBox="0 0 50 50"
+ version="1.1"
+ id="svg5"
+ sodipodi:docname="wallet.svg"
+ inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+ xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+ xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:svg="http://www.w3.org/2000/svg">
+<sodipodi:namedview
+ id="namedview7"
+ pagecolor="#ffffff"
+ bordercolor="#999999"
+ borderopacity="1"
+ inkscape:showpageshadow="0"
+ inkscape:pageopacity="0"
+ inkscape:pagecheckerboard="0"
+ inkscape:deskcolor="#d1d1d1"
+ inkscape:document-units="mm"
+ showgrid="false"
+ inkscape:zoom="32"
+ inkscape:cx="25.5"
+ inkscape:cy="30.55"
+ inkscape:window-width="1846"
+ inkscape:window-height="1016"
+ inkscape:window-x="74"
+ inkscape:window-y="27"
+ inkscape:window-maximized="1"
+ inkscape:current-layer="layer1" />
+<defs
+ id="defs2">
+<inkscape:path-effect
+ effect="bspline"
+ id="path-effect711"
+ is_visible="true"
+ lpeversion="1"
+ weight="33.33"
+ steps="2"
+ helper_size="0"
+ apply_no_weight="true"
+ apply_with_weight="true"
+ only_selected="false" />
+<inkscape:path-effect
+ effect="bspline"
+ id="path-effect607"
+ is_visible="true"
+ lpeversion="1"
+ weight="33.33"
+ steps="2"
+ helper_size="0"
+ apply_no_weight="true"
+ apply_with_weight="true"
+ only_selected="false" />
+<inkscape:path-effect
+ effect="bspline"
+ id="path-effect532"
+ is_visible="true"
+ lpeversion="1"
+ weight="33.33"
+ steps="2"
+ helper_size="0"
+ apply_no_weight="true"
+ apply_with_weight="true"
+ only_selected="false" />
+<inkscape:path-effect
+ effect="bspline"
+ id="path-effect524"
+ is_visible="true"
+ lpeversion="1"
+ weight="33.33"
+ steps="2"
+ helper_size="0"
+ apply_no_weight="true"
+ apply_with_weight="true"
+ only_selected="false" />
+</defs>
+<g
+ inkscape:label="Livello 1"
+ inkscape:groupmode="layer"
+ id="layer1">
+<path
+ style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+ d="m 14.94,21.65 c 0,4.37 0.1,13.11 0.18,17.67 0.13,4.56 0.35,4.93 4.81,5.12 4.47,0.18 13.18,0.18 17.77,-0.18 4.6,-0.36 5.08,-1.08 5.34,-5.69 0.27,-4.6 0.33,-13.08 -0.18,-17.37 -0.5,-4.3 -1.58,-4.4 -6.1,-4.42 -4.51,-0 -12.46,0 -16.68,0.14 -4.21,0.1 -4.68,0.23 -4.92,0.29 -0.23,0.1 -0.24,0.1 -0.22,4.44 z"
+ id="path522"
+ inkscape:path-effect="#path-effect524"
+ inkscape:original-d="m 14.92,17.28 c 0,8.74 0.1,17.48 0.1,26.23 0.23,0.37 0.45,0.74 0.67,1.11 8.71,0 17.42,0 26.13,0 0.48,-0.72 0.96,-1.44 1.43,-2.16 0.1,-8.49 0.12,-16.97 0.18,-25.45 -1.07,-0.12 -2.15,-0.22 -3.23,-0.32 -7.95,0.1 -15.9,0.13 -23.85,0.19 -0.48,0.14 -0.95,0.27 -1.42,0.4 z" />
+<path
+ style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+ d="m 15.32,34.37 c 3.85,-0 7.69,-0.1 9.6,-1.18 1.91,-1.12 1.87,-3.32 -0.1,-4.38 -1.94,-1.05 -5.8,-0.96 -9.65,-0.87"
+ id="path530"
+ inkscape:path-effect="#path-effect532"
+ inkscape:original-d="m 15.32,34.37 c 3.85,0 7.69,0 11.54,-0.1 0,-2.2 -0.1,-4.4 -0.1,-6.6 -3.85,0.1 -7.71,0.18 -11.56,0.27" />
+<path
+ style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+ d="M 14.92,21.15 C 12.75,18.98 10.58,16.81 9.493,15.72 8.405,14.63 8.355,14.63 9.664,13.32 10.97,12.01 13.59,9.397 14.9,8.092 c 1.31,-1.305 1.39,-1.263 3.06,0.395 1.68,1.653 5.02,4.973 8.37,8.293"
+ id="path605"
+ inkscape:path-effect="#path-effect607"
+ inkscape:original-d="M 14.92,21.15 C 12.75,18.98 10.58,16.81 8.405,14.63 H 8.355 C 10.98,12.02 13.59,9.4 16.2,6.783 c 0,0.02 0.1,0.03 0.1,0.05 3.34,3.307 6.68,6.627 10.03,9.947"
+ sodipodi:nodetypes="cscscc" />
+<path
+ style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+ d="m 22.23,12.71 c 1.98,-1.14 3.96,-2.29 4.97,-2.857 1.02,-0.57 1.1,-0.56 1.8,0.647 0.69,1.21 2.09,3.62 3.48,6.03"
+ id="path709"
+ inkscape:path-effect="#path-effect711"
+ inkscape:original-d="m 22.23,12.71 c 1.98,-1.14 3.96,-2.29 5.94,-3.431 0,0 0.13,0.01 0.13,0.01 1.39,2.417 2.78,4.827 4.18,7.237"
+ sodipodi:nodetypes="cccc" />
+<text
+ xml:space="preserve"
+ style="fill:#000000;stroke-width:30"
+ x="15.41"
+ y="9.814"
+ id="text779"><tspan
+ sodipodi:role="line"
+ id="tspan777"
+ x="15.41"
+ y="9.814" /></text>
+<text
+ xml:space="preserve"
+ style="fill:#000000;stroke-width:30"
+ x="16.61"
+ y="43.47"
+ id="text833"><tspan
+ sodipodi:role="line"
+ id="tspan831"
+ x="16.61"
+ y="43.47" /></text>
+<text
+ xml:space="preserve"
+ style="fill:#000000;stroke-width:30"
+ x="16.74"
+ y="45.68"
+ id="text837"><tspan
+ sodipodi:role="line"
+ id="tspan835"
+ x="16.74"
+ y="45.68" /></text>
+<text
+ xml:space="preserve"
+ style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2px;font-family:'Comic Neue';-inkscape-font-specification:'Comic Neue Bold';fill:#000000;stroke-width:30"
+ x="19.65"
+ y="41.88"
+ id="text178"
+ transform="rotate(4.218)"><tspan
+ sodipodi:role="line"
+ id="tspan176"
+ x="19.65"
+ y="41.88"
+ style="font-size:2px">dogenero</tspan></text>
+<ellipse
+ style="fill:#000000;stroke-width:30.0014"
+ id="path824"
+ cx="23.74"
+ cy="31"
+ rx="0.5441"
+ ry="0.5408" />
+</g>
+</svg>
