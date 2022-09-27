@@ -1,0 +1,15 @@
+	<p>
+		After the ground-breaking Bitcoin whitepaper published in 2008 by an anonymous individual or group known as Satoshi Nakamoto,
+		the research in the crypto-currencies field exploded.
+	</p>
+	<p>
+		Another anonymous individual known as Nicolas van Saberhagen published the CryptoNote whitepaper in 2013.<br>
+		CryptoNote was an open protocol for creating cryptocurrencies which aimed to fix several issues in Bitcoin, such as the lack of privacy.
+	</p>
+	<p>
+		Bytecoin was the first so-called privacy coin, forked from the CryptoNote Protocol.<br>
+		However, controversies in the Bytecoin cryptocurrency led to the creation of Monero.
+	</p>
+	<p>
+
+	</p>

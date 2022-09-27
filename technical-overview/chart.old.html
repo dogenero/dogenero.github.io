@@ -13,10 +13,11 @@
 		const SUPPLY = 2n ** 64n - 1n;
 		const EMISSION_SPEED_FACTOR = 19n;
 		const TAIL_EMISSION_PER_MINUTE = 0.5;
-		const PRECISION = 100;
-		const NR_BLOCKS = 2500000 / PRECISION;
+		const NR_BLOCKS = 3000000;
+		const PREC = 20;
 
-		const minutesPerDay = 60 * 24
+
+		const minutesPerDay = 60 * 24 
 		const tail = BigInt(TAIL_EMISSION_PER_MINUTE*100) * 10n**10n;
 		function maxBigInts(a, b) {
 			return a > b ? a : b
@@ -29,24 +30,17 @@
 
 		let alreadyMined = 0n;
 
-
-		console.log(tail)
 		for (var i = 0; i < NR_BLOCKS; i++) {
-			let emissionSpeed = EMISSION_SPEED_FACTOR
-
-			let amount = ((SUPPLY - alreadyMined) / (2n ** emissionSpeed)) ;
-			console.log(amount+"\n"+tail)
-
-			const m = maxBigInts(amount, tail) * BigInt(PRECISION)
+			const m = maxBigInts((SUPPLY - alreadyMined) / (2n ** EMISSION_SPEED_FACTOR), tail)
 			alreadyMined += m;
-			if (i % (minutesPerDay * 365 / 8 / PRECISION) === 0) {
-				const lbl = (Math.round(i / minutesPerDay * PRECISION)/365)
+			if (i % (minutesPerDay * 365 / 8) === 0) {
+				const lbl = (Math.round(i / minutesPerDay)/365)
 				if (lbl % 1 === 0) {
 						labels.push(lbl+" y")
 				} else {
 					labels.push(" ")
 				}
-				blockRewards.push(parseInt(m) / 10 ** 12 / parseInt(PRECISION))
+				blockRewards.push(parseInt(m) / 10 ** 12)
 				inflation.push(
 					parseInt(m) / parseFloat(alreadyMined/10n**12n) * minutesPerDay * 365 / 10**10
 				)
@@ -69,7 +63,7 @@
 				borderColor: "#66ee66",
 				data: supply,
 				yAxisID: 'y1',
-			}, /*{
+			}/*, {
 				label: "Inflation %",
 				backgroundColor: "#6666ee",
 				borderColor: "#6666ee",
@@ -88,9 +82,6 @@
 						radius: 0,
 						hoverRadius: 3
 					},
-					line: {
-						borderWidth: 2,
-					}
 				},
 				interaction: {
 					mode: "index",
@@ -102,9 +93,6 @@
 						type: 'linear',
 						display: false,
 						position: 'left',
-						min: 0,
-						max: 36,
-
 					},
 					y1: {
 						type: 'linear',

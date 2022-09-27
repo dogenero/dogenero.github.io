@@ -9,6 +9,8 @@
 }
 body {
 	margin: 0px;
+	width: 100vw;
+	overflow-x: hidden;
 	background-color: #333;
 }
 .titlebox {
@@ -120,4 +122,25 @@ table {
 @font-face {
 	font-family: "Comic Neue Bold";
 	src: url(comic_neue_bold.woff2);
+}
+#anondoge {
+	position: absolute;
+	left: 105vw;
+	top: 20px;
+	width: min(20vw, 50vh);
+	animation: anondoge_peek 3s both;
+	animation-delay: 2s;
+}
+@keyframes anondoge_peek {
+	0% {
+	}
+	40% {
+		transform: translateX(-15vw) rotate(-25deg);
+	}
+	60% {
+		transform: translateX(-15vw) rotate(-25deg);
+	}
+	100% {
+		transform: translateX(0) rotate(0);
+	}
 }
